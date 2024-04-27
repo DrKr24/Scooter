@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Scooter</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <img
+          class="header__logo"
+          src="/images/logo_dark.png"
+          alt="Logo"
+          loading="lazy"
+          width="60"
+        />
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-link"><a href="#">Продукт</a></li>
+            <li class="header__menu-link"><a href="#">Вигляд</a></li>
+            <li class="header__menu-link"><a href="#">Безпека</a></li>
+            <li class="header__menu-link"><a href="#">Відгуки</a></li>
+            <li class="header__menu-link"><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header-link link hidden-mobile">Купити</a>
+        <button
+          onclick="mobileOverlay.showModal()"
+          type="button"
+          class="visible-mobile header__burger-menu"
+        >
+          <span class="visually-hidden">Open menu</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="promo">
+        <div class="promo__inner container">
+          <h1 class="promo-title">
+            Стильний електросамокат із потужним акумулятором
+          </h1>
+          <p class="promo-description">
+            Поліпшена продуктивність<br />
+            для далеких подорожей.<br />
+            Працює так само просто,<br />
+            як і виглядає.
+          </p>
+          <div class="promo-image">
+            <img
+              class="promo-image"
+              src="/images/byke_dark.png"
+              alt="Byke"
+              loading="lazy"
+            />
+          </div>
+          <div class="theme-toggle">
+            <button
+              class="theme-toggle-button theme-toggle-button-light"
+              type="button"
+            >
+              Білий
+            </button>
+            <button
+              class="theme-toggle-button theme-toggle-button-dark"
+              type="button"
+            >
+              Чорний
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="battery">
+        <div class="battery__inner container">
+          <h2 class="battery__title title">
+            Потужна батарея та економічна витрата<br />
+            заряду дозволяють долати відстані до 45 км.
+          </h2>
+          <dl class="battery__list">
+            <div class="battery__list-item">
+              <dt class="battery__list-item-title dl-title">
+                Три режими швидкості
+              </dt>
+              <dd class="battery__list-item-description dl-description">
+                Три режими їзди дозволяють відчути себе комфортно у будь-якій
+                ситуації. Режим "S" збільшує швидкість, якщо спізнюєтеся на
+                роботу. Під час прогулянки парком активуйте режим «D». Увімкніть
+                режим «Пішохід», коли рухаєтеся по жвавій вулиці.
+              </dd>
+              <img
+                src="/images/battery/1.png"
+                alt="Scooter image"
+                class="battery__list-item-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="battery__list-item">
+              <dt class="battery__list-item-title dl-title">
+                Система відновлення енергії
+              </dt>
+              <dd class="battery__list-item-description dl-description">
+                Під час гальмування та руху за інерцією система перетворює
+                кінетичну енергію на електричну, дозволяючи збільшити загальний
+                запас ходу самокату.
+              </dd>
+              <img
+                src="/images/battery/2.png"
+                alt="Scooter image"
+                class="battery__list-item-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="battery__list-item">
+              <dt class="battery__list-item-title dl-title">Потужна батарея</dt>
+              <dd class="battery__list-item-description dl-description">
+                Самокат оснащений акумулятором ємністю 12800 мАг. Це дозволяє
+                долати відстань до 45 км без підзарядки.
+              </dd>
+              <img
+                src="/images/battery/3.png"
+                alt="Scooter image"
+                class="battery__list-item-image"
+                loading="lazy"
+              />
+            </div>
+          </dl>
+          <div class="hidden-tablet">
+            <div class="battery-images">
+              <div>
+                <img
+                  class="battery-images-item"
+                  src="/images/battery/4.png"
+                  alt="Scooter drive"
+                />
+              </div>
+              <div>
+                <img
+                  class="battery-images-item"
+                  src="/images/battery/5.png"
+                  alt="Scooter drive"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="info__inner container">
+          <div>
+            <img
+              class="info-logo"
+              src="/images/logos/logo-1.png"
+              alt="Logo"
+              loading="lazy"
+              width="60"
+            />
+          </div>
+          <dl class="info-list">
+            <dt class="info-list-title">
+              Висока швидкість<br />
+              пересування
+            </dt>
+            <dd class="info-list-desription">
+              Двигатель мощностью до 600 Вт позволяет<br />
+              развивать скорость до 25 км/ч.
+            </dd>
+          </dl>
+        </div>
+      </section>
+      <section class="design">
+        <div class="design__inner container">
+          <h2 class="design-title title">
+            Короткий сучасний дизайн,<br />
+            в якому немає нічого зайвого
+          </h2>
+          <dl class="design-list_promo">
+            <div class="design-list_promo-item">
+              <dt class="design-list_promo-item-title">
+                Мінімалістичний дизайн
+              </dt>
+              <dd class="design-list_promo-item-description">
+                Рама, компоненти та аксесуари скутера витримані в єдиному стилі,
+                де зручність користувача виходить на перше місце. Одного дотику
+                достатньо, щоб запустити самокат.
+              </dd>
+            </div>
+            <div class="design-list_promo-item">
+              <dt class="design-list_promo-item-title">
+                Зручна панель керування
+              </dt>
+              <dd class="design-list_promo-item-description">
+                Зручно розташовані елементи керування. Відображення8 типів даних
+                у реальному часі: швидкість, режим, заряд акумулятора, стан
+                блокування та інша інформація.
+              </dd>
+            </div>
+          </dl>
+          <h3 class="design-title title">Дбає про вашу безпеку</h3>
+          <dl class="design-list_info">
+            <div class="design-list_info-item">
+              <dt class="design-list_info-item-title dl-title">
+                Яскраві ходові вогні
+              </dt>
+              <dd class="design-list_info-item-description dl-description">
+                Продуманий кут розсіювання світла дозволяє зберігати хорошу
+                видимість, не засліплюючи інших учасників руху.
+              </dd>
+              <img
+                src="/images/design/3.png"
+                alt="Bright running lights"
+                class="design-list_info-item-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="design-list_info-item">
+              <dt class="design-list_info-item-title dl-title">
+                Подвійна гальмівна система
+              </dt>
+              <dd class="design-list_info-item-description dl-description">
+                При натисканні наручку гальма системи переднього та заднього
+                колеса активуються послідовно, скорочуючи гальмівний шлях та
+                забезпечуючи безпечну та плавну зупинку.
+              </dd>
+              <img
+                src="/images/design/4.png"
+                alt="Dual braking system"
+                class="design-list_info-item-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="design-list_info-item">
+              <dt class="design-list_info-item-title dl-title">
+                Яскрава задня фара
+              </dt>
+              <dd class="design-list_info-item-description dl-description">
+                При включенні ходових вогнів задня фара вмикається автоматично.
+                При натисканні на ручку гальма вона починає блимати,
+                попереджаючи інших учасників руху.
+              </dd>
+              <img
+                src="/images/design/5.png"
+                alt="Bright taillight"
+                class="design-list_info-item-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="design-list_info-item">
+              <dt class="design-list_info-item-title dl-title">
+                Відбивачі спереду, збоку та ззаду
+              </dt>
+              <dd class="design-list_info-item-description dl-description">
+                Покращені відбивачі, розміщені з чотирьох сторін, роблять вашу
+                поїздку у темний час доби безпечнішою.
+              </dd>
+              <img
+                src="/images/design/6.png"
+                alt="Reflectors front, side and rear"
+                class="design-list_info-item-image"
+                loading="lazy"
+              />
+            </div>
+          </dl>
+          <div class="hidden-tablet">
+            <div class="design-images">
+              <div>
+                <img
+                  class="design-images-item"
+                  src="/images/design/7.png"
+                  alt="Scooter lights"
+                />
+              </div>
+              <div>
+                <img
+                  class="design-images-item"
+                  src="/images/design/8.png"
+                  alt="Scooter lights"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="design__app">
+            <div class="design__app__info">
+              <h2 class="design__app__info-title title">
+                Мобільний додаток Mi<br />
+                Home
+              </h2>
+              <p class="design__app__info-description">
+                Підключіть самокат до мобільного додатку Mi Home та
+                використовуйте його для блокування та розблокування самоката, а
+                також перегляду основних даних: пробіг, швидкість, рівень заряду
+                акумулятора.
+              </p>
+              <div class="design__app__info-image__wrapper">
+                <a href="#">
+                  <img
+                    src="/images/design/appstore.png"
+                    alt="AppStore link"
+                    class="design__app__info-image"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="/images/design/playmarket.png"
+                    alt="Play Market link"
+                    class="design__app__info-image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="design__app-content">
+              <img
+                src="/images/design/phone_dark.png"
+                alt="App promo"
+                class="design__app-content-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info info-second">
+        <div class="info__inner container">
+          <div>
+            <img
+              class="info-logo"
+              src="/images/logos/logo-2.png"
+              alt="Logo"
+              loading="lazy"
+              width="60"
+            />
+          </div>
+          <dl class="info-list">
+            <dt class="info-list-title">Про бренд Xiaomi</dt>
+            <dd class="info-list-desription info-second-list-description">
+              Компанія Xiaomi була заснована підприємцем Лей Цзюнем у 2010 році
+              під девізом – «Інновації для всіх». Ми віримо, що високоякісні
+              продукти та передові технології мають бути доступні кожному.
+              Kompaniya Xiaomi
+            </dd>
+          </dl>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="questions__inner container">
+          <h2 class="questions-title title">Відгуки про Mi Scooter Pro 2</h2>
+          <div class="swiper">
+            <div class="questions-slider swiper-wrapper">
+              <div class="questions-slide swiper-slide">
+                <h3 class="questions-slide-title">Михайло Сафонов</h3>
+                <p class="questions-slide-description">
+                  Вибирав між двома моделями: цим Mi Scooter Pro 2 та Ninebot
+                  Max 30P, у плюсах Макса – десятидюймова гума та дальність
+                  пробігу на одному заряді, швидкість зарядки. У плюсах Xiaomi -
+                  зручності перенесення (вага апарату, розважування). У
+                  результаті купив Xiaomi і поставив 10 дюймові шини – отримав
+                  комфорт при невеликій вазі самокату.
+                </p>
+              </div>
+              <div class="questions-slide swiper-slide">
+                <h3 class="questions-slide-title">Михайло Сафонов</h3>
+                <p class="questions-slide-description">
+                  Вибирав між двома моделями: цим Mi Scooter Pro 2 та Ninebot
+                  Max 30P, у плюсах Макса – десятидюймова гума та дальність
+                  пробігу на одному заряді, швидкість зарядки. У плюсах Xiaomi -
+                  зручності перенесення (вага апарату, розважування). У
+                  результаті купив Xiaomi і поставив 10 дюймові шини – отримав
+                  комфорт при невеликій вазі самокату.
+                </p>
+              </div>
+              <div class="questions-slide swiper-slide">
+                <h3 class="questions-slide-title">Михайло Сафонов</h3>
+                <p class="questions-slide-description">
+                  Вибирав між двома моделями: цим Mi Scooter Pro 2 та Ninebot
+                  Max 30P, у плюсах Макса – десятидюймова гума та дальність
+                  пробігу на одному заряді, швидкість зарядки. У плюсах Xiaomi -
+                  зручності перенесення (вага апарату, розважування). У
+                  результаті купив Xiaomi і поставив 10 дюймові шини – отримав
+                  комфорт при невеликій вазі самокату.
+                </p>
+              </div>
+              <div class="questions-slide swiper-slide">
+                <h3 class="questions-slide-title">Михайло Сафонов</h3>
+                <p class="questions-slide-description">
+                  Вибирав між двома моделями: цим Mi Scooter Pro 2 та Ninebot
+                  Max 30P, у плюсах Макса – десятидюймова гума та дальність
+                  пробігу на одному заряді, швидкість зарядки. У плюсах Xiaomi -
+                  зручності перенесення (вага апарату, розважування). У
+                  результаті купив Xiaomi і поставив 10 дюймові шини – отримав
+                  комфорт при невеликій вазі самокату.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination questions-actions-pagination visible-mobile-small"
+            ></div>
+          </div>
+
+          <div class="questions-actions">
+            <a href="#" class="questions-actions-link link">Залишити відгук</a>
+            <div class="questions-actions-slider">
+              <button
+                class="questions-actions-slider-button questions-actions-slider-button-prev"
+              >
+                <img src="/images/arrow-left.png" alt="Previous slide" />
+              </button>
+              <button
+                class="questions-actions-slider-button questions-actions-slider-button-next"
+              >
+                <img src="/images/arrow-right.png" alt="Next slide" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="faq__inner container">
+          <div class="faq__info">
+            <h2 class="faq__info-title title">Поширені запитання</h2>
+            <p class="faq__info-description">
+              Все ваши часто задаваемые вопросыо электросамокате Mi Scooter Pro
+              2.<br /><br />
+              Если у вас есть собственный вопрос - задайте его через форму
+              обратной связи.
+            </p>
+            <a href="#" class="faq__info-link link">Задати питання</a>
+          </div>
+          <dl class="faq__questions">
+            <div class="faq__questions-item">
+              <dt class="faq__questions-item-title">
+                На нього потрібні права категорії M?
+              </dt>
+              <dd class="faq__questions-item-descriptions dl-description">
+                Продуманий кут розсіювання світла дозволяє зберігати хорошу
+                видимість, не засліплюючи інших учасників руху.
+              </dd>
+            </div>
+            <div class="faq__questions-item">
+              <dt class="faq__questions-item-title">
+                У мене вага 135 кг, чи витримає цей самокат?
+              </dt>
+              <dd class="faq__questions-item-descriptions dl-description">
+                Самокат безперечно витримає і їхатиме, але не з максимальною
+                швидкістю.
+              </dd>
+            </div>
+            <div class="faq__questions-item">
+              <dt class="faq__questions-item-title">Чи є вологозахист?</dt>
+              <dd class="faq__questions-item-descriptions dl-description">
+                Електросамокат має ступінь захисту IP54. Він захищений від
+                попадання пилу та бризок, що падають у будь-якому напрямку.
+                Занурення у воду може призвести до поломки.
+              </dd>
+            </div>
+            <div class="faq__questions-item">
+              <dt class="faq__questions-item-title">
+                Це версія для Китаю чи Європи?
+              </dt>
+              <dd class="faq__questions-item-descriptions dl-description">
+                Це Європейська версія, з усіма оновленнями та євро-вилкою.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section class="product">
+        <div class="product__inner container">
+          <div class="product__info">
+            <h2 class="product__info-title title">Mi Electric Scooter Pro 2</h2>
+            <p class="product__info-price">54 990 ₽</p>
+            <div class="product__info-theme theme-toggle">
+              <button
+                class="theme-toggle-button theme-toggle-button-light"
+                type="button"
+              >
+                Білий
+              </button>
+              <button
+                class="theme-toggle-button theme-toggle-button-dark"
+                type="button"
+              >
+                Чорний
+              </button>
+            </div>
+          </div>
+          <div class="product__stats">
+            <h3 class="product__stats-title">Комплект поставки</h3>
+            <ul class="product__stats-list">
+              <li class="product__stats-item dl-description">
+                Адаптер живлення
+              </li>
+              <li class="product__stats-item dl-description">
+                Шестигранний ключ
+              </li>
+              <li class="product__stats-item dl-description">
+                Подовжувач для насосу
+              </li>
+              <li class="product__stats-item dl-description">Гвинти x 5 шт.</li>
+              <li class="product__stats-item dl-description">Запасна шина</li>
+              <li class="product__stats-item dl-description">
+                Інструкція користувача
+              </li>
+              <li class="product__stats-item dl-description">
+                Буклет з інформацією
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="product-link link">Купить</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <a href="#" class="footer-link dl-description"
+          >© 2010 - 2021 Xiaomi.
+        </a>
+        <a href="tel:38061616187" class="footer-link dl-description"
+          >38061616187</a
+        >
+        <a href="#" class="footer-link dl-description">Всі права захищені</a>
+        <a href="#" class="footer-link dl-description"
+          >Години роботи з 9:00 до 20:00 KIEV, Пн. - Пт.</a
+        >
+      </div>
+    </footer>
+    <dialog class="mobile-overlay" id="mobileOverlay">
+      <form class="mobile-overlay-form">
+        <button
+          onclick="mobileOverlay.close()"
+          class="mobile-overlay-form__button"
+          type="submit"
+        >
+          <span class="visually-hidden">Close menu</span>
+        </button>
+      </form>
+      <ul class="mobile-overlay-list">
+        <li class="mobile-overlay-list-item"><a href="#">Продукт</a></li>
+        <li class="mobile-overlay-list-item"><a href="#">Вигляд</a></li>
+        <li class="mobile-overlay-list-item"><a href="#">Безпека</a></li>
+        <li class="mobile-overlay-list-item"><a href="#">Відгуки</a></li>
+        <li class="mobile-overlay-list-item"><a href="#">FAQ</a></li>
+      </ul>
+    </dialog>
+    <script src="/scritpts/theme.js"></script>
+    <script src="/scritpts/slider.js"></script>
+  </body>
+</html>
