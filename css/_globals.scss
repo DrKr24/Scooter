@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color-primary);
+  font-family: "Gilroy";
+  font-weight: 600;
+  color: var(--primary-color-first);
+  line-height: var(--line-height-large);
+  transition-duration: var(--transition-duration);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color-third);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+button,
+input {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}

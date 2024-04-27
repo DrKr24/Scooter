@@ -1,0 +1,23 @@
+:root {
+  --primary-color-first: #f1f1f1;
+  --primary-color-second: #151515;
+  --primary-color-third: #ff4c0d;
+
+  --color-light: #f1f1f1;
+  --color-dark: #151515;
+  --second-color: #ff4c0d;
+
+  --background-color-primary: #1e1e1e;
+  --background-color-alter: #e0e0e0;
+
+  --line-height-large: 1.5;
+  --line-height-medium: 1.2;
+  --line-height-regular: 1.1;
+
+  --border-radius: 65px;
+
+  --container-padding: 140px;
+  --container-width: calc(1160px + 140px * 2);
+
+  --transition-duration: 0.5s;
+}

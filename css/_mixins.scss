@@ -1,0 +1,27 @@
+@mixin fluid-text($min, $max) {
+  font-size: clamp(#{$min}px, calc((#{$max} / 1440) * 100vw), #{$max}px);
+}
+
+@mixin inline-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin link-style($background-color, $text-color) {
+  display: inline-flex;
+  height: 54px;
+  padding-inline: 50px;
+  background-color: $background-color;
+  color: $text-color;
+  font-weight: 700;
+  line-height: 1.5;
+  border-radius: var(--border-radius);
+  @include flex-center;
+}
