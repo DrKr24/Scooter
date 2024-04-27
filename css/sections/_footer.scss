@@ -1,0 +1,15 @@
+.footer {
+  padding-top: 100px;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    padding-bottom: 10px;
+  }
+  &-link {
+    &:nth-child(even) {
+      text-align: right;
+    }
+  }
+}

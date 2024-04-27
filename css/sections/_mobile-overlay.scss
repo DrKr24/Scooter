@@ -1,0 +1,49 @@
+.mobile-overlay {
+  --linear-gradient: linear-gradient(155deg, #753f26 60%, rgb(67, 37, 37));
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  background: var(--linear-gradient);
+  border: none;
+  &-form {
+    width: 100%;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: flex-end;
+    &__button {
+      @include flex-center;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      justify-content: space-between;
+      translate: -6px 6px;
+      &::before,
+      &::after {
+        content: "";
+        width: 2px;
+        height: 40px;
+        background-color: var(--primary-color-second);
+      }
+      &::before {
+        rotate: 45deg;
+        translate: 19px;
+      }
+      &::after {
+        rotate: -45deg;
+        translate: -19px;
+      }
+    }
+  }
+  &-list {
+    @include flex-center;
+    flex-direction: column;
+    row-gap: 30px;
+    translate: 0 50%;
+    &-item {
+      color: var(--primary-color-first);
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}

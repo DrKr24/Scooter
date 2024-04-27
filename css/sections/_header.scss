@@ -1,0 +1,79 @@
+.header {
+  position: relative;
+  padding-top: 50px;
+  @include desktop {
+    padding-top: 25px;
+  }
+  &__inner {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+    padding-inline: 100px;
+    @include desktop {
+      padding-inline: 15px;
+      column-gap: 30px;
+      justify-content: space-between;
+    }
+  }
+  &__logo {
+    @include tablet {
+      max-width: 40px;
+    }
+  }
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    @include tablet {
+      column-gap: 25px;
+    }
+  }
+  &__menu-link a {
+    @include inline-flex;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    height: 50px;
+  }
+  &-link {
+    margin-left: auto;
+    @include tablet {
+      margin-left: 0;
+    }
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &::before {
+    content: url(/svg/circle_1.svg);
+    @include mobile {
+      display: none;
+    }
+  }
+  &::after {
+    content: url(/svg/circle_2.svg);
+  }
+
+  &__burger-menu {
+    display: none;
+    width: 54px;
+    height: 54px;
+    background-color: var(--color-light);
+    @include mobile {
+      @include flex-center;
+    }
+    border-radius: 50%;
+    &::before {
+      content: "";
+      height: 2px;
+      width: 30px;
+      background-color: var(--color-dark);
+      box-shadow: 0 -8px var(--color-dark), 0 8px var(--color-dark);
+    }
+  }
+}

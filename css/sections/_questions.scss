@@ -1,0 +1,122 @@
+.questions {
+  padding-top: 100px;
+  position: relative;
+  &__inner {
+    padding-inline: 100px;
+    @include tablet {
+      padding-inline: 15px;
+    }
+  }
+  &-title {
+    margin-bottom: 50px;
+  }
+  &-slider {
+    column-gap: 60px;
+    margin-bottom: 60px;
+    padding: 10px 5px;
+    @include desktop {
+      column-gap: 30px;
+    }
+  }
+  &-slide {
+    display: flex;
+    width: 460px;
+    flex-direction: column;
+    row-gap: 20px;
+    box-sizing: border-box;
+    background-color: var(--primary-color-second);
+    border-radius: 15px;
+    padding: 30px;
+    &-title {
+      @include fluid-text(16, 20);
+      user-select: none;
+      line-height: 1.2;
+      color: var(--primary-color-first);
+
+      &::after {
+        content: "";
+        display: block;
+        margin: 20px 0;
+        margin-bottom: 20px;
+        width: 100px;
+        height: 3px;
+        background-color: var(--primary-color-third);
+      }
+    }
+    &-description {
+      user-select: none;
+      font-weight: 400;
+      @include fluid-text(12, 14);
+      letter-spacing: -0.01em;
+      color: var(--primary-color-first);
+    }
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: space-between;
+    @include mobile-small {
+      position: relative;
+      row-gap: 30px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &-pagination {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    &-slider {
+      display: flex;
+      column-gap: 20px;
+      @include mobile-small {
+        display: none;
+      }
+      &-button {
+        @include flex-center;
+        width: 54px;
+        aspect-ratio: 1;
+        background-color: var(--color-light);
+        border-radius: 50%;
+        display: block;
+        &-next {
+          background-color: var(--primary-color-third);
+        }
+      }
+    }
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/svg/circle_1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+  }
+}
+
+.swiper-slide {
+  background-color: var(--primary-color-second);
+  max-width: 460px;
+  @include mobile {
+    max-width: 415px;
+  }
+  @include mobile-small {
+    max-width: 280px;
+  }
+}
+
+span.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(97, 89, 89);
+}
+
+span.swiper-pagination-bullet-active {
+  background: #ffffff;
+}

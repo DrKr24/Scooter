@@ -1,0 +1,47 @@
+.info-second {
+  background-image: url(/images/info-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  position: relative;
+  z-index: -2;
+  height: clamp(420px, 41.6vw, 600px);
+  @include tablet {
+    background-position: -100px 0;
+  }
+  @include mobile {
+    background-position: -250px 0;
+  }
+  @include mobile-small {
+    background-position: -420px 0;
+  }
+  ::before {
+    content: "";
+    background-image: url(/images/info-3.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: clamp(420px, 41.6vw, 600px);
+    background-color: rgba(233, 233, 115, 0.005);
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    @include desktop {
+      left: -100px;
+    }
+    @include tablet {
+      left: -200px;
+      background-position: -100px 0;
+    }
+    @include mobile {
+      left: -300px;
+    }
+    @include mobile-small {
+      left: -400px;
+    }
+  }
+  &-list-description {
+    max-width: 350px;
+  }
+}

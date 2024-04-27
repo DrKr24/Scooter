@@ -1,0 +1,55 @@
+.promo {
+  padding-top: 150px;
+  @include tablet {
+    padding-top: 100px;
+  }
+  @include mobile {
+    padding-top: 300px;
+  }
+  &__inner {
+    padding-inline: 100px;
+    @include desktop {
+      padding-inline: 15px;
+    }
+  }
+  &-image {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: clamp(735px, 78.8vw, 1135px);
+    height: clamp(400px, 57.8vw, 831px);
+    z-index: -1;
+    img {
+      width: clamp(550px, 78.8vw, 1135px);
+      height: clamp(400px, 57.8vw, 831px);
+      @include tablet {
+        translate: 15%;
+      }
+      @include mobile {
+        translate: 20%;
+      }
+    }
+  }
+  &-title {
+    @include fluid-text(30, 80);
+    line-height: 100%;
+    margin-bottom: 70px;
+    @include tablet {
+      margin-bottom: 50px;
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    @include mobile-small {
+      max-width: 320px;
+    }
+  }
+  &-description {
+    @include fluid-text(16, 30);
+    line-height: 120%;
+    color: var(--primary-color-first);
+  }
+}
