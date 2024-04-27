@@ -46,25 +46,25 @@ button {
 
 @font-face {
   font-family: "Gilroy";
-  src: url(/fonts/Gilroy-Regular.woff2) format("woff2");
+  src: url(../fonts/Gilroy-Regular.woff2) format("woff2");
   font-weight: 400;
   font-size: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(/fonts/Gilroy-Medium.woff2) format("woff2");
+  src: url(../fonts/Gilroy-Medium.woff2) format("woff2");
   font-weight: 500;
   font-size: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(/fonts/Gilroy-SemiBold.woff2) format("woff2");
+  src: url(../fonts/Gilroy-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-size: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(/fonts/Gilroy-Bold.woff2) format("woff2");
+  src: url(../fonts/Gilroy-Bold.woff2) format("woff2");
   font-weight: 700;
   font-size: normal;
 }
@@ -326,7 +326,7 @@ button {
   z-index: -1;
 }
 .header::before {
-  content: url(/svg/circle_1.svg);
+  content: url(../svg/circle_1.svg);
 }
 @media (max-width: 640px) {
   .header::before {
@@ -334,7 +334,7 @@ button {
   }
 }
 .header::after {
-  content: url(/svg/circle_2.svg);
+  content: url(../svg/circle_2.svg);
 }
 .header__burger-menu {
   display: none;
@@ -486,7 +486,7 @@ button {
 .battery {
   padding-top: 200px;
   padding-bottom: 120px;
-  background-image: url(/svg/circle_3.svg);
+  background-image: url(../svg/circle_3.svg);
   background-repeat: no-repeat;
   position: relative;
   background-position: 0 -50px;
@@ -576,7 +576,7 @@ button {
 }
 
 .info {
-  background-image: url(/images/info.png);
+  background-image: url(../images/info.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -648,7 +648,7 @@ button {
 .design::before {
   content: "";
   display: inline-block;
-  background-image: url(/svg/circle_1.svg);
+  background-image: url(../svg/circle_1.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -662,7 +662,7 @@ button {
 .design::after {
   content: "";
   display: inline-block;
-  background-image: url(/svg/circle_3.svg);
+  background-image: url(../svg/circle_3.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -728,10 +728,10 @@ button {
   }
 }
 .design-list_promo-item:nth-child(1) {
-  background-image: url(/images/design/1.png);
+  background-image: url(../images/design/1.png);
 }
 .design-list_promo-item:nth-child(2) {
-  background-image: url(/images/design/2.png);
+  background-image: url(../images/design/2.png);
 }
 .design-list_promo-item-title {
   max-width: 420px;
@@ -851,7 +851,7 @@ button {
 }
 
 .info-second {
-  background-image: url(/images/info-2.png);
+  background-image: url(../images/info-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -876,7 +876,7 @@ button {
 }
 .info-second ::before {
   content: "";
-  background-image: url(/images/info-3.png);
+  background-image: url(../images/info-3.png);
   background-repeat: no-repeat;
   display: inline-block;
   width: 100%;
@@ -1010,7 +1010,7 @@ button {
 .questions::before {
   content: "";
   display: inline-block;
-  background-image: url(/svg/circle_1.svg);
+  background-image: url(../svg/circle_1.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
